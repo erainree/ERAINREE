@@ -202,12 +202,6 @@ def render(data):
         f'{rng["start"]} &#8594; {rng["end"]}</text>'
     )
     ly += 24
-    parts.append(
-        f'<text x="{PAD}" y="{ly}" font-size="13" fill="{MUTED}">current streak '
-        f'<tspan fill="{INK}" font-weight="700">{cs} day{"s" if cs != 1 else ""}</tspan>'
-        f'<tspan fill="{MUTED}"> &#183; longest </tspan>'
-        f'<tspan fill="{INK}" font-weight="700">{ls} day{"s" if ls != 1 else ""}</tspan></text>'
-    )
     if best["date"]:
         # Right-aligned text with multiple colored tspans doesn't flow
         # correctly in every SVG renderer, so this line is placed on its
