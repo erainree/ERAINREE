@@ -185,32 +185,6 @@ def render(data):
     sep_y = leg_y + CELL + 14
     parts.append(f'<line x1="0" y1="{sep_y}" x2="{canvas_w}" y2="{sep_y}" stroke="{FRAME}"/>')
 
-    cs = data["current_streak"]["length"]
-    ls = data["longest_streak"]["length"]
-    total = data["total_contributions"]
-    best = data["best_day"]
-    rng = data["range"]
-
-    ly = sep_y + 24
-    parts.append(
-        f'<text x="{PAD}" y="{ly}" font-size="13" fill="{ACCENT}">'
-        f'<tspan font-weight="700">{total:,}</tspan>'
-        f'<tspan fill="{MUTED}"> contributions in the last year</tspan></text>'
-    )
-    parts.append(
-        f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
-        f'{rng["start"]} &#8594; {rng["end"]}</text>'
-    )
-    ly += 24
-    if best["date"]:
-        # Right-aligned text with multiple colored tspans doesn't flow
-        # correctly in every SVG renderer, so this line is placed on its
-        # own row and left-aligned instead of sharing the row above.
-        ly += 24
-        parts.append(
-            f'<text x="{PAD}" y="{ly}" font-size="12" fill="{MUTED}">'
-            f'best day <tspan fill="{GOLD}" font-weight="700">{best["count"]}</tspan> on {best["date"]}</text>'
-        )
 
     parts.append("</svg>")
     return "".join(parts)
