@@ -9,7 +9,7 @@
 
 <h3><code>erainree@github ~ $ ./contributions.sh</code></h3>
 
-<img src="./contrib-heatmap.svg" width="860" alt="Elaine's GitHub contribution graph — auto-refreshed daily" />
+<img src="./contrib-heatmap.svg?v=2" width="860" alt="Elaine's GitHub contribution graph — auto-refreshed daily" />
 
 <br>
 <br>
