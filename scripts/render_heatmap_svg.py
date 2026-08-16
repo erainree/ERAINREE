@@ -110,7 +110,7 @@ def render(data):
 
     canvas_w = PAD + LEFT_LABEL_W + art_w + PAD
     stats_h = 112
-    canvas_h = TITLEBAR_H + TOP_LABEL_H + art_h + stats_h + PAD
+    canvas_h = TITLEBAR_H + TOP_LABEL_H + art_h + PAD
 
     css = f"""
 @keyframes cell {{
