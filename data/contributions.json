@@ -1478,10 +1478,14 @@
     },
     {
       "date": "2026-11-27",
+      "count": 1
+    },
+    {
+      "date": "2026-11-28",
       "count": 0
     }
   ],
-  "total_contributions": 107,
+  "total_contributions": 108,
   "best_day": {
     "date": "2026-08-16",
     "count": 2
@@ -1490,10 +1494,10 @@
     "length": 0
   },
   "longest_streak": {
-    "length": 105
+    "length": 106
   },
   "range": {
     "start": "2025-11-23",
-    "end": "2026-11-27"
+    "end": "2026-11-28"
   }
 }
